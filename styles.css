@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body{
+    background:#0b1120;
+    display: flex;
+    justify-content: center;
+}
+
+
+.todo-wrapper{
+    max-width: 2000px;
+    width: 85%;
+    min-height: 90vh;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 20px;
+    margin-top: 3%;
+}
+
+.title{
+    text-align: center;
+}
+.todo-input{
+    width: 70%;
+    height: 2rem;
+    padding: 1rem;
+}
+.todo-btn{
+    margin-left: 5px;
+    padding: 7px;
+    
+}
+.input-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tasks {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    margin: 15px 0;
+    padding: 12px;
+    overflow: hidden;
+    position: relative;
+    
+}
+span{
+    word-wrap: break-word;
+    margin-right: 50px;
+    white-space:normal;
+    width: 90%;
+}
+
+.tasks.checked{
+    text-decoration: line-through;
+    color: #555;
+    background: #00000037;
+}
+  
+.task-checkbox{
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    accent-color: #1b29a719;
+}
+
+.trash{
+    position: absolute;
+    right: 20px;
+    z-index: 2;
+    font-size: 15px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+
+@media(max-width:850px)
+{
+    span{
+        width: 70%;
+    }   
+}
+
+@media(max-width:402px)
+{
+    .todo-btn{
+        font-size: 10px;
+    }
+}
+
+@media(max-width: 1000px)
+{
+    .todo-wrapper{
+        width: 100%;
+        min-height: 100vh;
+        border-radius: 0;
+        margin-top: 0;
+    }
+}
